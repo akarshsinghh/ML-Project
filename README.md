@@ -1,5 +1,5 @@
 # IE7374 FINAL PROJECT REPORT
-## Online Shopper's Purchasing Intention [Group 10]
+## Online Shopper's Purchasing Intention
 Made by 
 * Sai Vinay Teja Jakku - [jakku.s@northeastern.edu](jakku.s@northeastern.edu)
 * Akarsh Singh - [singh.akar@northeastern.edu](singh.akar@northeastern.edu)
@@ -18,3 +18,6 @@ Of the 12,330 sessions in the dataset, 84.5% (10,422) were negative class sample
 ### Splitting The Dataset:
 The first step before we start training the model is to split the data into train and test data sets. We train the model using the training dataset and evaluate the fit model using the test dataset. We also have split the data into folds for k-fold cross-validation for one of the machine learning models. Splitting the dataset into train, validation and test data helps in removing bias and in hyper-tuning the parameters.
 
+### Exploratory Data Analysis and Visualization:
+To get a complete overview of the dataset we were dealing with, we created a function that described the dimensions. The description includes the categorical attributes, numerical attributes, number of null values in all the columns and many more.
+ 
