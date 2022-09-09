@@ -20,4 +20,5 @@ The first step before we start training the model is to split the data into trai
 
 ### Exploratory Data Analysis and Visualization:
 To get a complete overview of the dataset we were dealing with, we created a function that described the dimensions. The description includes the categorical attributes, numerical attributes, number of null values in all the columns and many more.
- 
+![fig1](https://user-images.githubusercontent.com/66643857/189422773-c6013517-0b05-4398-a2bc-1782c48a2ac9.png)
+
