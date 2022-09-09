@@ -21,9 +21,8 @@ The first step before we start training the model is to split the data into trai
 ### Exploratory Data Analysis and Visualization:
 To get a complete overview of the dataset we were dealing with, we created a function that described the dimensions. The description includes the categorical attributes, numerical attributes, number of null values in all the columns and many more.
 
-![fig1](https://user-images.githubusercontent.com/66643857/189428133-e6545d4d-2ea7-45eb-8bbc-013372d11b64.jpg)
-![fig2](https://user-images.githubusercontent.com/66643857/189428136-f45a0688-d2d1-46a6-bc71-74ad597b5f9b.jpg)
-![fig3](https://user-images.githubusercontent.com/66643857/189428137-e25553cb-0d30-416c-b95a-500eb73300ab.jpg)
-![fig4](https://user-images.githubusercontent.com/66643857/189428141-17ebd5b4-737c-4cbe-a2f4-b681bb861749.jpg)
-![fig5](https://user-images.githubusercontent.com/66643857/189428163-b73060db-916d-4fee-a770-d9064a9d972e.jpg)
-
+![fig1](https://user-images.githubusercontent.com/66643857/189428827-f50af644-6621-4d56-adae-d18694346f79.jpg)
+![fig2](https://user-images.githubusercontent.com/66643857/189428831-0c4912db-6834-4156-844f-91e47e12d7d8.jpg)
+![fig3](https://user-images.githubusercontent.com/66643857/189428834-51399e53-1b50-4f8d-8aea-6867c1b09073.jpg)
+![fig4](https://user-images.githubusercontent.com/66643857/189428849-48ed88e5-ba27-43cf-997b-0e6f0caa9434.jpg)
+![fig5](https://user-images.githubusercontent.com/66643857/189428856-6f651301-8834-4e4d-a9c8-494cfe74936f.jpg)
