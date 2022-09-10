@@ -115,7 +115,9 @@ Algorithm:
 
 ##### Logistic Regression Results:
 We tried tuning the parameters such as learning rate and tolerance here are a few of them
+
 ![fig14](https://user-images.githubusercontent.com/66643857/189440528-b62b04ac-d3ea-4109-8a48-dcf233e1c6bd.jpg)
+
 The balanced results are given with a learning rate of 0.1 and tolerance of 0.01 concerning the target class i.e Revenue.
 
 The best results were given with a learning rate of 0.1 and a tolerance of 0.01. The test accuracy obtained was 0.89, with precision and recall as 0.66 and 0.82. This is a much better balance when compared to our baseline logistic regression model (threshold 0.5) which had a precision and recall of 0.78 and 0.47 respectively whereas our model gave the best results with a threshold value of 0.9. 
@@ -126,6 +128,7 @@ Gaussian Naive Bayes assumes that each class follows a Gaussian distribution. As
 We already assumed that the distribution of values in the columns is gaussian, so for each dimension, mean and standard deviations are calculated. For any new point, we look into the probability distribution of the dimension values to find the probability of it belonging to the respective distribution. The function used is:
 
 ![fig15](https://user-images.githubusercontent.com/66643857/189440892-f4e4d60e-a42b-4eac-8f6e-9cea33047c95.jpg)
+
 Algorithm:
 1. The dataset values are split into training and testing sets. The training set is up-scaled using the smote function to take into account the biassed number of true to false values in the target variable.
 2. The training data is split data comprising the two classes, which are to be classified.
@@ -142,3 +145,38 @@ The Gaussian Naive Bayes gave poor performance values compared to our baseline m
 ![fig17](https://user-images.githubusercontent.com/66643857/189441630-9b23277f-9e47-4cd6-972c-345c16a35312.jpg)
 
 The model recall value is high because of the highly skewed classification. As seen above, the model tends to classify the majority of the observations to class 1 which is our target class, which is not a desirable outcome. Thus, from the results seen here, this model should not be considered for our dataset given the highly skewed distribution.
+
+#### Neural Networks
+
+![fig18](https://user-images.githubusercontent.com/66643857/189498187-17309175-7c92-4f56-9bb7-a188029fbdf0.jpg)
+
+Here, we have used fully connected neural networks with 1 input layer, 2 hidden layers, and a final output layer when the sigmoid function is applied to give a probability between 0 and 1 for the respective classes. This class of networks consists of multiple layers of computational units, usually interconnected in a feed-forward way. Each neuron in one layer has directed connections to the neurons of the subsequent layer. In many applications, the units of these networks apply a sigmoid function as an activation function. Other functions include tan(h), relu, etc. A basic structure of a single node is displayed below:
+
+![fig19](https://user-images.githubusercontent.com/66643857/189498219-e1d95a90-e5a2-4bc8-b856-b5fbe46f61a5.jpg)
+
+The model summary for the final model used is as shown below:
+
+![fig20](https://user-images.githubusercontent.com/66643857/189498251-23b69ba6-841d-4f40-963d-37502c87e01f.jpg)
+
+##### Bias-Variance Trade-off:
+
+We monitored the validation loss in tandem with the training loss and the number of epochs to see how it changes. Initially starting with a higher number of iterations (epochs) we noticed that the validation loss is increasingly fluctuating from a minimum point, this meant that the model was overfitting. We balanced that off by reducing the number of epochs. After that, we noticed that the validation accuracy was increasing which meant that the model would generalise well.
+
+![fig21](https://user-images.githubusercontent.com/66643857/189498275-90cb12fa-8736-4bbf-bef4-749d25065b24.jpg)
+
+##### Neural Networks Results:
+
+The neural network was our best-performing model that generalised well. It had a test accuracy of 0.90. But more importantly, precision and recall of 0.74 and 0.75 respectively concerning the target class 1. This is a much better balance when compared to our baseline logistic regression model (threshold 0.5) which had a precision and recall of 0.78 and 0.47 respectively. These stats are good considering the sheer class imbalance in the test data. In simpler terms, the model is capable of recognizing every 3/4 true labels correctly. Accuracy is high because many 0-class data points can be identified easily.
+
+Some additional results obtained are shown below in the form of a table:
+
+![fig22](https://user-images.githubusercontent.com/66643857/189498337-5ea206e4-289c-434d-9a4c-6aea634dcb23.jpg)
+
+#### Final Results:
+
+The granularity and nature of the dataset bought challenges that needed to be handled to generate a generalised usable predictive model. Through the processes, most time was spent on understanding nuances of the features from a statistical standpoint and selecting the best ones based on evidence and standard procedures. Upscaling was also important to elevate our class of interest and SMOTE does a good job in the mix for the same. We included multiple classification algorithms and gauged the pros and cons for each. Fully connected neural networks outperform other algorithms for our case by having high precision and recall values that are also close to each other. Logistic regression also gave us good results. We also note that the best results were obtained when the threshold value for positive classification was over 0.8. This shows that due to the sheer amount of class imbalance in the test set, it is better to classify a datapoint as positive until the model is highly certain. As not a part of our course, decision tree-based models were not tested for this project. 
+
+#### Citation:
+
+[1] Sakar, C. & Kastro, Yomi. (2018). Online Shoppers Purchasing Intention Dataset, UCI Machine Learning Repository
+[2] Page 47, Imbalance Learning: Foundations, Algorithms, and Applications, 2013
