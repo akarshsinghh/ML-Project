@@ -175,7 +175,12 @@ The neural network was our best-performing model that generalised well. It had a
 
 Some additional results obtained are shown below in the form of a table:
 
-![fig22](https://user-images.githubusercontent.com/66643857/189498337-5ea206e4-289c-434d-9a4c-6aea634dcb23.jpg)
+| Epochs | Batch Sizes | Accuracy |   F1   | Recall | Precision |
+|:------:|:-----------:|:--------:|:------:|:------:|:---------:|
+|     50 |         256 |   0.8784 | 0.6517 | 0.5930 |    0.7232 |
+|    150 |         512 |   0.8925 | 0.7140 | 0.6994 |    0.7292 |
+|    150 |         256 |   0.9004 |  0.745 | 0.7587 |    0.7318 |
+|    150 |          64 |   0.8941 | 0.7294 | 0.7444 |    0.7151 |
 
 #### Final Results:
 
