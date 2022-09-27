@@ -116,7 +116,12 @@ Algorithm:
 ##### Logistic Regression Results:
 We tried tuning the parameters such as learning rate and tolerance here are a few of them
 
-![fig14](https://user-images.githubusercontent.com/66643857/189440528-b62b04ac-d3ea-4109-8a48-dcf233e1c6bd.jpg)
+| Tolerance | Learning Rate | Accuracy | F1     | Recall | Precision |
+|-----------|---------------|----------|--------|--------|-----------|
+|   0.00001 |         0.001 |   0.9023 | 0.7060 | 0.6749 |    0.7401 |
+|     0.001 |          0.01 |   0.9051 | 0.7352 | 0.7584 |    0.7133 |
+|      0.01 |           0.1 |   0.8968 | 0.7362 | 0.8284 |    0.6624 |
+|    0.0001 |        0.0001 |   0.8956 | 0.6453 | 0.5463 |    0.7883 |
 
 The balanced results are given with a learning rate of 0.1 and tolerance of 0.01 concerning the target class i.e Revenue.
 
