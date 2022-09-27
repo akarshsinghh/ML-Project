@@ -41,7 +41,7 @@ The number of false cases heavily outweighs the number of True classes. From thi
 
 To evaluate the distribution of values of the columns with relatively high correlation values with the ‘Revenue’ column, a bar plot was used.
 
-![fig8](https://user-images.githubusercontent.com/66643857/192442609-5d1236d5-4883-4099-893f-c41d1807df05.png)
+![fig8](https://user-images.githubusercontent.com/66643857/192454950-642057b1-d0cf-44ba-ad60-4b67595e5807.png)
 
 The data is highly skewed concerning revenue with many outliers. The skewness of the columns is dealt with while the skew handling process and the outlier and dealt with during Data preprocessing and cleaning.
 
