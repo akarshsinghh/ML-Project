@@ -29,7 +29,7 @@ To get a complete overview of the dataset we were dealing with, we created a fun
 
 All the attributes of the dataset contained non-null values. Hence, null value processing was not required. We then shifted our focus towards finding the correlation of each attribute with every other attribute in the table to remove recursive information.
 
-![fig6](https://user-images.githubusercontent.com/66643857/189435495-6ab8b4b9-65e9-40e9-9ea9-52105ee934ca.jpg)
+![fig6](https://user-images.githubusercontent.com/66643857/192442606-963f75cc-7a57-4ce9-b846-e700783c85c5.png)
 
 We see a high correlation between the ‘BounceRate’ and the ‘ExitRates’ (0.91) and between the ‘ProductRelated_Duration’ and the ‘ProductRelated’ (0.86). These columns were dealt with while Feature selection. 
 
@@ -41,13 +41,13 @@ The number of false cases heavily outweighs the number of True classes. From thi
 
 To evaluate the distribution of values of the columns with relatively high correlation values with the ‘Revenue’ column, a bar plot was used.
 
-![fig8](https://user-images.githubusercontent.com/66643857/189436022-dba33775-03b3-4b24-89c4-16239b330f34.jpg)
+![fig8](https://user-images.githubusercontent.com/66643857/192442609-5d1236d5-4883-4099-893f-c41d1807df05.png)
 
 The data is highly skewed concerning revenue with many outliers. The skewness of the columns is dealt with while the skew handling process and the outlier and dealt with during Data preprocessing and cleaning.
 
 In the next part, we checked for the linear separability of the two classes for the subset of the total number of attributes in our dataset. We used a grid plot for this case. The lower diagonal shows the kernel density estimate of the distribution concerning the attribute pairs, the upper diagonal shows the scatter plot of the same attribute pairs and the diagonal shows the distribution of attribute values across the dataset using kernel density estimate plot. The ‘TotalDuration’ here denotes the summation of the ‘Administrative_Duration’, the ‘Informational_Duration, and the ‘ProductRelated_Duration’.
 
-![fig9](https://user-images.githubusercontent.com/66643857/189436377-ddbe6782-11bc-4a58-a8fd-e5ff85a46f1c.jpg)
+![fig9](https://user-images.githubusercontent.com/66643857/192442611-a1883131-0af4-4a6f-ade0-c44798049cc1.png)
 
 From the data, we can see that the concentration of the 2 classes and mostly overlapping in all the cases. To the best of our knowledge, we see no separability of these classes when represented in 2-dimensional space.
 
@@ -73,8 +73,8 @@ The following steps were taken after multiple iterations of trial, and testing, 
 
 A couple of examples are shown below for outlier detection:
 
-![fig10](https://user-images.githubusercontent.com/66643857/189438445-24ebe897-f12e-4fe1-ad1b-6c7a6f1f56e7.jpg)
-![fig11](https://user-images.githubusercontent.com/66643857/189438451-d50f78c2-fa42-4a74-bb8d-4265a7a0cdcb.jpg)
+![fig10](https://user-images.githubusercontent.com/66643857/192442599-93bbff79-1778-473f-9ac8-cd24c879234f.png)
+![fig11](https://user-images.githubusercontent.com/66643857/192442601-05423116-c6a5-4cf0-8935-83afc504b09e.png)
 
 6. Lastly the data frame was normalised to a standard scale before feeding it into a model.
 
@@ -97,7 +97,7 @@ Following are the different Machine Learning Models we Implemented For Classific
 #### Logistic Regression:
 It is a form of statistical software that analyses the association between a dependent variable and one or more independent variables by estimating probabilities using a logistic regression equation.
 
-![fig13](https://user-images.githubusercontent.com/66643857/189439554-53935c70-ba11-45ce-9e5b-6975cbb982e2.jpg)
+![fig13](https://user-images.githubusercontent.com/66643857/192442603-a2da7879-edf8-48bf-aee6-9dfa5ebeee2d.png)
 
 This analysis can help anticipate the likelihood of an event or a choice occurring. The output obtained in the case of logistic regression is always between (0 and 1), which is suitable for a binary classification task. The higher the value, the higher the probability that the current sample is classified as class= 1, and vice versa. It takes both continuous and discrete variables as input. The data fed into the model is upscaled on the minority class.
 
