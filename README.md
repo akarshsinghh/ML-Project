@@ -1,4 +1,5 @@
 # IE7374 FINAL PROJECT REPORT
+Note- All the ML models used for prediction were created from scratch without using any libraries
 ## Online Shopper's Purchasing Intention
 Made by 
 * Sai Vinay Teja Jakku - [jakku.s@northeastern.edu](jakku.s@northeastern.edu)
